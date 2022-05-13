@@ -1,1 +1,1 @@
-{"mappings":"ACAA;;;;ACAA","sources":["public/scss/main.scss","public/scss/layout.scss","public/scss/nav.scss"],"sourcesContent":["@import 'layout';\r\n@import 'nav';",null,null],"names":[],"version":3,"file":"index.c74267d1.css.map","sourceRoot":"/__parcel_source_root/"}
+{"mappings":"ACAA;;;;ADGA","sources":["public/scss/main.scss","public/scss/nav.scss"],"sourcesContent":["@import 'layout';\r\n@import 'nav';\r\n\r\nbody{\r\n    background-color: #323232;\r\n}\r\n",null],"names":[],"version":3,"file":"index.c74267d1.css.map","sourceRoot":"/__parcel_source_root/"}

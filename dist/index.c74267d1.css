@@ -1,9 +1,9 @@
-body {
-  background-color: gray;
-}
-
 nav {
   display: flex;
+}
+
+body {
+  background-color: #323232;
 }
 
 /*# sourceMappingURL=index.c74267d1.css.map */
