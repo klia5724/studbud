@@ -1,15 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Hello, world!</title>
+  <title>Studbud</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="" />
-  <!-- <link rel="icon" href="img/favicon.png"> -->
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
   <link rel="stylesheet" href="scss/main.scss">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-  <h1>Hello, world!</h1>
+  <header>
+    <img id="logo" src="/images/logo.png" alt="Studbud logo" width="187.8" height="55.8">
+  </header>
+
+  <div id="container">
+    <div class="main"> <p>hello world</p> </div>
+
+  <!-- REMEMBER TO APA REFERENCE https://boxicons.com/usage -->
+    <div id="sidebar">
+      <div class="toggles"> 
+
+        <div id="musicToggle" onclick="openMusic()"> 
+          <button type="button" class="openFeat" onclick="openFeat()"> 
+          <i class='bx bx-music bx-md bx-tada-hover'></i>
+        </button></div>
+        
+        <div id="searchToggle">
+          <button type="button" class="openFeat" onclick="openFeat()">
+          <i class='bx bx-search bx-md bx-tada-hover'></i>
+        </button></div>
+
+        <div id="timerToggle">
+          <button type="button" class="openFeat" onclick="openFeat()">
+          <i class='bx bx-time-five bx-md bx-tada-hover'></i>
+        </button></div>
+
+      </div>
+    </div>
+  </div>
+    
+  <div class="features">
+    <button type="button" class="closeFeat" onclick="closeFeat()">
+        <i class='bx bx-x bx-md '></i>
+      </button>
+    <div id="musicPlayer"> <p >musicPlayer</p> </div>
+    <div id="pomodoro"> <p >pomodoro</p> </div>
+    <div id="stopwatch"> <p >stopwatch</p> </div>
+    <div id="dictionary"> <p >dictionary</p> </div>
+  </div>
+
 </body>
+
 <script src="script.js"></script>
 </html>

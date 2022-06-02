@@ -1,2 +1,12 @@
 @import 'layout';
-@import 'nav';
+@import 'sidebar';
+
+/* css reset */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Lato', sans-serif;
+  background-color: #323232
+}
+
+
