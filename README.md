@@ -22,7 +22,10 @@ Hence I did not create a separate tasklist and instead integrated it into the ka
 ![Prototype - Add new task - input task details](/readme-files\kanban-task-details.PNG)
 >From prototype: defining task details from kanban board
 
-Also, the dark mode of the web app highlights other colours and allows for greater contrast in consideration of accessibility.
+Also, the dark mode of the web app highlights the other brighter colours from logo colour scheme, allowing for greater contrast in consideration of visual accessibility.
+
+![Prototype - Logo colour contrast](/readme-files\logo-colours.PNG)
+>From prototype: effective colour contrast from logo colour scheme and dark background
 
 ## Sidebar
 The sidebar allows for easier access of secondary features (music player, timers, dictionary) and saving user effort by not needing to click to another page and leave the kanban board. 
