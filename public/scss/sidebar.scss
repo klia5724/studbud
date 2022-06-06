@@ -1,5 +1,6 @@
-#sidebar {
-    position: absolute;
+/* sidebar */
+#sidebar { 
+    position: absolute; 
     right: 0%;
     height: 100%;
     width: 50px;
@@ -9,9 +10,9 @@
     transition: 0.5s ease;
     padding-right: 15px;
     background-color: #323232;
-}
-
-.features {
+  }
+  
+  .features { 
     position: fixed;
     height: 100%;
     overflow: hidden;
@@ -19,19 +20,18 @@
     right: 0;
     width: 0;
     top: 0;
-    /*   padding: 20px 20px; */
     outline-style: solid;
     outline-color: #9e9e9e;
     outline-width: thin;
     transition: 0.5s ease;
     background-color: #323232;
-}
-
-.features button:hover {
+  }
+  
+  .features button:hover {
     color: #F2CA58;
-}
-
-.closeFeat {
+  }
+  
+  .closeFeat {
     position: absolute;
     top: 0;
     right: 5px;
@@ -40,26 +40,26 @@
     background-color: #323232;
     color: white;
     cursor: pointer;
-}
-
-.toggles {
+  }
+  
+  .toggles {
     display: flex;
     flex-direction: column;
-    margin: 15px;
+    margin: 15px; 
     transition: 1s ease;
-}
-
-.toggles div {
+  }
+  
+  .toggles div {
     padding: 15px 0px;
-}
-
-.toggles button {
+  }
+  
+  .toggles button {
     border: none;
     color: white;
     cursor: pointer;
     background-color: #323232;
-}
-
-.toggles button:hover {
+  }
+  
+  .toggles button:hover {
     color: #F2CA58;
-}
+  }
