@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Studbud</title>
   <meta charset="UTF-8" />
@@ -13,45 +14,93 @@
 <body>
   <header>
     <img id="logo" src="/images/logo.png" alt="Studbud logo" width="187.8" height="55.8">
+    <div class="addNew">
+      <button id="addTask">Add Task</button>
+      <button id="addCol">Add Column</button>
+    </div>
   </header>
 
-  <div id="container">
-    <div class="main"> <p>hello world</p> </div>
+  <main>
 
-  <!-- REMEMBER TO APA REFERENCE https://boxicons.com/usage -->
+    <div class="kanban" id="kanbanBoard">
+
+      <div class="statusCol">
+        <h3 class="status">To-Do</h3>
+        <div class="taskCol" id="noStatus">
+          <div class="task" id="task1" draggable="true">
+            <div class="taskContent">task</div>
+            <span class="delete">&times;</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="statusCol">
+        <h3 class="status">Today</h3>
+        <div class="taskCol">
+        </div>
+      </div>
+
+      <div class="statusCol">
+        <h3 class="status">In Progress</h3>
+        <div class="taskCol">
+        </div>
+      </div>
+
+      <div class="statusCol">
+        <h3 class="status">Done</h3>
+        <div class="taskCol">
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- REMEMBER TO APA REFERENCE https://boxicons.com/usage -->
     <div id="sidebar">
-      <div class="toggles"> 
+      <div class="toggles">
 
-        <div id="musicToggle" onclick="openMusic()"> 
-          <button type="button" class="openFeat" onclick="openFeat()"> 
-          <i class='bx bx-music bx-md bx-tada-hover'></i>
-        </button></div>
-        
+        <div id="musicToggle" onclick="openMusic()">
+          <button type="button" class="openFeat" onclick="openFeat()">
+            <i class='bx bx-music bx-md bx-tada-hover'></i>
+          </button>
+        </div>
+
         <div id="searchToggle">
           <button type="button" class="openFeat" onclick="openFeat()">
-          <i class='bx bx-search bx-md bx-tada-hover'></i>
-        </button></div>
+            <i class='bx bx-search bx-md bx-tada-hover'></i>
+          </button>
+        </div>
 
         <div id="timerToggle">
           <button type="button" class="openFeat" onclick="openFeat()">
-          <i class='bx bx-time-five bx-md bx-tada-hover'></i>
-        </button></div>
+            <i class='bx bx-time-five bx-md bx-tada-hover'></i>
+          </button>
+        </div>
 
       </div>
     </div>
-  </div>
-    
-  <div class="features">
-    <button type="button" class="closeFeat" onclick="closeFeat()">
+    </div>
+
+    <div class="features">
+      <button type="button" class="closeFeat" onclick="closeFeat()">
         <i class='bx bx-x bx-md '></i>
       </button>
-    <div id="musicPlayer"> <p >musicPlayer</p> </div>
-    <div id="pomodoro"> <p >pomodoro</p> </div>
-    <div id="stopwatch"> <p >stopwatch</p> </div>
-    <div id="dictionary"> <p >dictionary</p> </div>
-  </div>
+      <div id="musicPlayer">
+        <p>musicPlayer</p>
+      </div>
+      <div id="pomodoro">
+        <p>pomodoro</p>
+      </div>
+      <div id="stopwatch">
+        <p>stopwatch</p>
+      </div>
+      <div id="dictionary">
+        <p>dictionary</p>
+      </div>
+    </div>
 
 </body>
 
 <script src="script.js"></script>
+
 </html>
