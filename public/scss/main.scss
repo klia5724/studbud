@@ -2,7 +2,7 @@
 @import 'sidebar';
 @import 'music';
 
-/* css reset */
+/* css reset styles */
 * {
   margin: 0px;
   padding: 0px;
@@ -14,7 +14,7 @@ body {
 }
 
 /* kanban board */
-main { 
+main {
   position: absolute;
   width: 95%;
   height: 87.5%;
@@ -22,14 +22,16 @@ main {
   background-color: #323232;
 }
 
+/* auto generate dimensions of columns in grids so it fits nicely in viewport */
 .kanban {
-  display: grid; 
-  grid-template-columns: 
-    repeat(auto-fit, minmax(200px, 1fr)); 
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(200px, 1fr));
   width: auto;
   height: 90%;
 }
 
+/* styles for columns */
 .statusCol {
   position: relative;
   width: 85%;
@@ -56,6 +58,7 @@ main {
   border-radius: 10px;
 }
 
+/* style task position and dimensions so it is centred in columns */
 .task {
   position: relative;
   padding: 10px;
@@ -75,6 +78,7 @@ main {
   background-color: white;
 }
 
+/* option to delete task */
 .delete {
   position: absolute;
   right: 1%;
@@ -89,16 +93,16 @@ main {
   color: black;
 }
 
-/* add task popup */
+/* add new task popup for user to input task details */
 .popup {
   display: none;
   position: fixed;
   z-index: 1;
   top: 25%;
   left: 35%;
-  width: 30%; 
-  height: 58%; 
-  overflow: hidden; 
+  width: 30%;
+  height: 58%;
+  overflow: hidden;
   background-color: white;
   border-radius: 10px;
 }

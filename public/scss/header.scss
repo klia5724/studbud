@@ -9,7 +9,7 @@ header {
     background-color: #323232;
 }
 
-/* addNew buttons style */
+/* add new task + column button style */
 header button {
     padding: 10px;
     margin-right: 10px;
@@ -22,6 +22,7 @@ header button {
     cursor: pointer;
 }
 
+/* add hover and active states to make more dimensional and visually appealing */
 header button:hover {
     background-color: #2e668e;
 }

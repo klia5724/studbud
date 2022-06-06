@@ -1,65 +1,70 @@
 /* sidebar */
-#sidebar { 
-    position: absolute; 
-    right: 0%;
-    height: 87.5%;
-    width: 50px;
-    outline-style: solid;
-    outline-color: #9e9e9e;
-    outline-width: thin;
-    transition: 0.5s ease;
-    padding-right: 15px;
-    background-color: #323232;
-  }
-  
-  .features { 
-    position: fixed;
-    height: 100%;
-    overflow: hidden;
-    z-index: 1;
-    right: 0;
-    width: 0;
-    top: 0;
-    outline-style: solid;
-    outline-color: #9e9e9e;
-    outline-width: thin;
-    transition: 0.5s ease;
-    background-color: #323232;
-  }
-  
-  .features button:hover {
-    color: #F2CA58;
-  }
-  
-  .closeFeat {
-    position: absolute;
-    top: 0;
-    right: 5px;
-    margin: 5px;
-    border: none;
-    background-color: #323232;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .toggles {
-    display: flex;
-    flex-direction: column;
-    margin: 15px; 
-    transition: 1s ease;
-  }
-  
-  .toggles div {
-    padding: 15px 0px;
-  }
-  
-  .toggles button {
-    border: none;
-    color: white;
-    cursor: pointer;
-    background-color: #323232;
-  }
-  
-  .toggles button:hover {
-    color: #F2CA58;
-  }
+
+/* position sidebar to the far right */
+#sidebar {
+  position: absolute;
+  right: 0%;
+  height: 87.5%;
+  width: 50px;
+  outline-style: solid;
+  outline-color: #9e9e9e;
+  outline-width: thin;
+  transition: 0.5s ease;
+  padding-right: 15px;
+  background-color: #323232;
+}
+
+/* position sliding panel off to the side of viewport and transition it in nicely with easing */
+.features {
+  position: fixed;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+  right: 0;
+  width: 0;
+  top: 0;
+  outline-style: solid;
+  outline-color: #9e9e9e;
+  outline-width: thin;
+  transition: 0.5s ease;
+  background-color: #323232;
+}
+
+.features button:hover {
+  color: #F2CA58;
+}
+
+/* Close sliding panel */
+.closeFeat {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  margin: 5px;
+  border: none;
+  background-color: #323232;
+  color: white;
+  cursor: pointer;
+}
+
+/* Styling sidebar toggles indicating the user is hovering over the buttons*/
+.toggles {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  transition: 1s ease;
+}
+
+.toggles div {
+  padding: 15px 0px;
+}
+
+.toggles button {
+  border: none;
+  color: white;
+  cursor: pointer;
+  background-color: #323232;
+}
+
+.toggles button:hover {
+  color: #F2CA58;
+}

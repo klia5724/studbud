@@ -1,56 +1,61 @@
 /* music player */
 
-.musicPlayer{
-    padding-top: 30px;
-    height: auto;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* position music player div to centre of sliding panel */
+.musicPlayer {
+  padding-top: 30px;
+  height: auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.songCover{
-    margin: 20px 0 10px;
-    height: 175px;
-    width: 175px;
-    border: 2px solid white;
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
+/* style track details's dimensions and make sure everything is evenly spaced with padding and margins */
+.songCover {
+  margin: 20px 0 10px;
+  height: 175px;
+  width: 175px;
+  border: 2px solid white;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
 }
 
-.songTitle, .songArtist {
+.songTitle,
+.songArtist {
   margin-top: 5px;
 }
 
 .musicSeeker {
-    margin: 10px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .musicButtons {
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .songPrev,
 .songPlayPause,
 .songNext {
-    padding: 10px;
-    cursor: pointer;
+  padding: 10px;
+  cursor: pointer;
 }
 
-.timeNow, .timeDuration {
-   color: white;
+.timeNow,
+.timeDuration {
+  color: white;
 }
 
+// removing default styles of slider and adding styles according to webapp colours
 .seeker {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -73,6 +78,8 @@
   cursor: pointer;
 }
 
-.timeNow, .seeker, .timeDuration {
+.timeNow,
+.seeker,
+.timeDuration {
   padding: 0 5px;
 }
