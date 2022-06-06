@@ -1,0 +1,78 @@
+/* music player */
+
+.musicPlayer{
+    padding-top: 30px;
+    height: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.songCover{
+    margin: 20px 0 10px;
+    height: 175px;
+    width: 175px;
+    border: 2px solid white;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.songTitle, .songArtist {
+  margin-top: 5px;
+}
+
+.musicSeeker {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.musicButtons {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#songPrev,
+#songPlayPause,
+#songNext {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.seeker {
+  -webkit-appearance: none;
+  width: 50%;
+  cursor: pointer;
+}
+
+.seeker {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 6px;
+  background: #FFC935;
+  border-radius: 20px;
+}
+
+.seeker::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 16px;
+  width: 16px;
+  background: white;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.timeNow, .seeker, .timeDuration {
+  padding: 0 5px;
+}

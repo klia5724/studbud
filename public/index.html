@@ -61,17 +61,17 @@
         </button>
       </div>
       <div class="body">
-        <input type="text" id="taskTitle" placeholder="Title*" required>
-        <textarea id="taskDesc" id="taskDesc" name="taskDesc" placeholder="Description" required></textarea>
-        <input type="text" id="taskPriority" placeholder="Priority: Low / Medium / High" required>
-        <label for="taskDueDate">Due Date</label>
-        <input type="date" id="taskDueDate" required>
-        <label for="taskTime">Time to Complete</label>
-        <input type="text" id="taskTime" placeholder="__hours __minutes" required>
-
-        <input type="submit" value="Save" id="taskSubmit" />
+        <form id="taskForm">
+          <input type="text" id="taskTitle" placeholder="Title*" required>
+          <textarea id="taskDesc" id="taskDesc" name="taskDesc" placeholder="Description" required></textarea>
+          <input type="text" id="taskPriority" placeholder="Priority: Low / Medium / High" required>
+          <label for="taskDueDate">Due Date</label>
+          <input type="date" id="taskDueDate" required>
+          <label for="taskTime">Time to Complete</label>
+          <input type="text" id="taskTime" placeholder="__hours __minutes" required>
+          <input type="submit" value="Save" id="taskSubmit" />
       </div>
-
+      </form>
     </div>
 
   </main>
@@ -105,20 +105,32 @@
 
   <div class="features">
     <button type="button" class="closeFeat" onclick="closeFeat()">
-      <i class='bx bx-x bx-md '></i>
-    </button>
-    <div id="musicPlayer">
-      <p>musicPlayer</p>
-    </div>
-    <div id="pomodoro">
-      <p>pomodoro</p>
-    </div>
-    <div id="stopwatch">
-      <p>stopwatch</p>
-    </div>
-    <div id="dictionary">
-      <p>dictionary</p>
-    </div>
+        <i class='bx bx-x bx-md '></i>
+      </button>
+    <div class="musicPlayer"> 
+             <h2 class="nowPlaying">Now Playing</h2>
+             <div class="songCover"></div>
+             <div class="songTitle">Song Name</div>
+             <div class="songArtist">Song Artist</div>
+           </div>
+
+         <div class="musicSeeker">
+             <div class="timeNow">00:00</div>
+              <input type="range" min="1" max="100" value="0" class="seeker" onchange="seekTo()">
+              <div class="timeDuration">00:00</div>
+         </div>
+
+         <div class="musicButtons">
+             <div id="songPrev" onclick="prevTrack()">
+                  <i class='bx bx-skip-previous bx-lg'></i>
+              </div>
+              <div id="songPlayPause" onclick="playpauseTrack()">
+                  <i class='bx bx-play bx-lg'></i>
+              </div>
+              <div id="songNext" onclick="nextTrack()">
+                  <i class='bx bx-skip-next bx-lg'></i>
+              </div>
+        </div>
   </div>
 
 </body>
