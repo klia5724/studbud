@@ -115,6 +115,32 @@ function createTask() {
     taskDetails.classList.remove("active");
 }
 
+// add task column
+document.getElementById("addCol").addEventListener("click", addColumn); 
+
+function addColumn() {
+  var newColumn = document.createElement("div");
+   newColumn.style.width = "85%";
+  
+  var newStatus = document.createElement("h3");
+  newStatus.style.cssText += "padding:10px;background-color:white;color:#323232";
+   newStatus.style.borderRadius = "10px";
+   newStatus.style.cssText += "display:flex;justify-content:center";
+  
+  var headingText = document.createTextNode("new column");
+  
+  var newTaskCol = document.createElement("div");
+  newTaskCol.style.cssText += "margin-top:10px;padding:10px;width:auto;height:90%;background-color:#606060";
+   newTaskCol.style.borderRadius = "10px";
+  
+  var kBoard = document.getElementById("kanbanBoard");
+  
+  newStatus.appendChild(headingText);
+  newColumn.appendChild(newStatus);
+  newColumn.appendChild(newTaskCol);
+  kBoard.appendChild(newColumn);
+}
+
 // open and close sidebar functions following W3 School How TO - Collapse Sidebar Tutorial:
 // https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp 
 // REMEMBER TO APA REFERENCE^^^
