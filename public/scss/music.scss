@@ -40,26 +40,26 @@
     margin-bottom: 30px;
 }
 
-#songPrev,
-#songPlayPause,
-#songNext {
+.songPrev,
+.songPlayPause,
+.songNext {
     padding: 10px;
     cursor: pointer;
 }
 
-.seeker {
-  -webkit-appearance: none;
-  width: 50%;
-  cursor: pointer;
+.timeNow, .timeDuration {
+   color: white;
 }
 
 .seeker {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  width: 50%;
   height: 6px;
   background: #FFC935;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 .seeker::-webkit-slider-thumb {

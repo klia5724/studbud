@@ -82,7 +82,7 @@
     <div class="toggles">
 
       <div id="musicToggle" onclick="openMusic()">
-        <button type="button" class="openFeat" onclick="openFeat()">
+        <button type="button" class="openFeat" onclick="openMusic()">
           <i class='bx bx-music bx-md bx-tada-hover'></i>
         </button>
       </div>
@@ -105,7 +105,7 @@
 
   <div class="features">
     <button type="button" class="closeFeat" onclick="closeFeat()">
-        <i class='bx bx-x bx-md '></i>
+        <i class='bx bx-x bx-md'></i>
       </button>
     <div class="musicPlayer"> 
              <h2 class="nowPlaying">Now Playing</h2>
@@ -119,15 +119,14 @@
               <input type="range" min="1" max="100" value="0" class="seeker" onchange="seekTo()">
               <div class="timeDuration">00:00</div>
          </div>
-
          <div class="musicButtons">
-             <div id="songPrev" onclick="prevTrack()">
+             <div class="songPrev" onclick="prevSong()">
                   <i class='bx bx-skip-previous bx-lg'></i>
               </div>
-              <div id="songPlayPause" onclick="playpauseTrack()">
+              <div class="songPlayPause" onclick="songPlayPause()">
                   <i class='bx bx-play bx-lg'></i>
               </div>
-              <div id="songNext" onclick="nextTrack()">
+              <div class="songNext" onclick="nextSong()">
                   <i class='bx bx-skip-next bx-lg'></i>
               </div>
         </div>

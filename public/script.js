@@ -116,38 +116,121 @@ function createTask() {
 }
 
 // add task column
-document.getElementById("addCol").addEventListener("click", addColumn); 
+document.getElementById("addCol").addEventListener("click", addColumn);
 
 function addColumn() {
-  var newColumn = document.createElement("div");
-   newColumn.style.width = "85%";
-  
-  var newStatus = document.createElement("h3");
-  newStatus.style.cssText += "padding:10px;background-color:white;color:#323232";
-   newStatus.style.borderRadius = "10px";
-   newStatus.style.cssText += "display:flex;justify-content:center";
-  
-  var headingText = document.createTextNode("new column");
-  
-  var newTaskCol = document.createElement("div");
-  newTaskCol.style.cssText += "margin-top:10px;padding:10px;width:auto;height:90%;background-color:#606060";
-   newTaskCol.style.borderRadius = "10px";
-  
-  var kBoard = document.getElementById("kanbanBoard");
-  
-  newStatus.appendChild(headingText);
-  newColumn.appendChild(newStatus);
-  newColumn.appendChild(newTaskCol);
-  kBoard.appendChild(newColumn);
+    var newColumn = document.createElement("div");
+    newColumn.style.width = "85%";
+
+    var newStatus = document.createElement("h3");
+    newStatus.style.cssText += "padding:10px;background-color:white;color:#323232";
+    newStatus.style.borderRadius = "10px";
+    newStatus.style.cssText += "display:flex;justify-content:center";
+
+    var headingText = document.createTextNode("new column");
+
+    var newTaskCol = document.createElement("div");
+    newTaskCol.style.cssText += "margin-top:10px;padding:10px;width:auto;height:90%;background-color:#606060";
+    newTaskCol.style.borderRadius = "10px";
+
+    var kBoard = document.getElementById("kanbanBoard");
+
+    newStatus.appendChild(headingText);
+    newColumn.appendChild(newStatus);
+    newColumn.appendChild(newTaskCol);
+    kBoard.appendChild(newColumn);
 }
 
 // open and close sidebar functions following W3 School How TO - Collapse Sidebar Tutorial:
 // https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp 
 // REMEMBER TO APA REFERENCE^^^
-function openFeat() {
+function openMusic() {
     document.querySelector(".features").style.width = "300px";
 }
 
 function closeFeat() {
     document.querySelector(".features").style.width = "0";
+}
+
+// music player 
+
+const nowPlaying = document.querySelector('.nowPlaying');
+const songCover = document.querySelector('.songCover');
+const songTitle = document.querySelector('.songTitle');
+const songArtist = document.querySelector('.songArtist');
+
+const iconPrev = document.querySelector('.songPrev');
+const iconPlayPause = document.querySelector('.songPlayPause');
+const iconNext = document.querySelector('.songNext');
+
+const musicSeeker = document.querySelector('.musicSeeker');
+const audio = document.getElementById('audio');
+const currentSong = document.createElement('audio');
+
+let song_index = 0;
+let songPlaying = false;
+let updateTimer;
+
+const songs = [
+    {
+        img : 'music/shelter.jpg',
+        music : 'music/shelter.mp3',
+        name : 'Shelter',
+        artist : 'Madeon'
+    },
+    {
+        img : 'images/down.jpg',
+        music : 'music/Down (feat. Grey).mp3',
+        name : 'Falling Down',
+        artist : 'Ace (feat. Grey)'
+    }
+];
+
+loadSong(song_index);
+
+function loadSong(song_index) {
+  currentSong.src = songs[song_index].music;
+  currentSong.load();
+
+    songCover.style.backgroundImage = "url(" + songs[song_index].img + ")";
+    songTitle.textContent = songs[song_index].name;
+    songArtist.textContent = songs[song_index].artist;
+}
+
+function songPlayPause(){
+    songPlaying ? pauseSong() : playSong();
+}
+
+function playSong() {
+  currentSong.play();
+  songPlaying = true;
+  iconPlayPause.innerHTML = '<i class="bx bx-pause bx-lg"></i>';
+}
+
+function pauseSong() {
+  currentSong.pause();
+  songPlaying = false;
+  iconPlayPause.innerHTML = '<i class="bx bx-play bx-lg"></i>';
+}
+
+function prevSong() {
+  song_index--;
+
+  if (song_index < 0) {
+    song_index = songs.length - 1;
+  }
+
+  loadSong(song_index);
+  playSong();
+}
+
+function nextSong() {
+  song_index++;
+
+  if (song_index > songs.length - 1) {
+    song_index = 0;
+  }
+
+  loadSong(song_index);
+  playSong();
 }
