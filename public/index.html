@@ -52,52 +52,74 @@
         </div>
       </div>
     </div>
+
+    <div class="popup" id="taskDetails">
+      <div class="header">
+        <h2 id="popupTitle">Task Details</h2>
+        <button class="popupClose">
+          <i class='bx bx-x'></i>
+        </button>
+      </div>
+      <div class="body">
+        <input type="text" id="taskTitle" placeholder="Title*" required>
+        <textarea id="taskDesc" id="taskDesc" name="taskDesc" placeholder="Description" required></textarea>
+        <input type="text" id="taskPriority" placeholder="Priority: Low / Medium / High" required>
+        <label for="taskDueDate">Due Date</label>
+        <input type="date" id="taskDueDate" required>
+        <label for="taskTime">Time to Complete</label>
+        <input type="text" id="taskTime" placeholder="__hours __minutes" required>
+
+        <input type="submit" value="Save" id="taskSubmit" />
+      </div>
+
+    </div>
+
   </main>
 
 
-    <!-- REMEMBER TO APA REFERENCE https://boxicons.com/usage -->
-    <div id="sidebar">
-      <div class="toggles">
+  <!-- REMEMBER TO APA REFERENCE https://boxicons.com/usage -->
+  <div id="sidebar">
+    <div class="toggles">
 
-        <div id="musicToggle" onclick="openMusic()">
-          <button type="button" class="openFeat" onclick="openFeat()">
-            <i class='bx bx-music bx-md bx-tada-hover'></i>
-          </button>
-        </div>
-
-        <div id="searchToggle">
-          <button type="button" class="openFeat" onclick="openFeat()">
-            <i class='bx bx-search bx-md bx-tada-hover'></i>
-          </button>
-        </div>
-
-        <div id="timerToggle">
-          <button type="button" class="openFeat" onclick="openFeat()">
-            <i class='bx bx-time-five bx-md bx-tada-hover'></i>
-          </button>
-        </div>
-
+      <div id="musicToggle" onclick="openMusic()">
+        <button type="button" class="openFeat" onclick="openFeat()">
+          <i class='bx bx-music bx-md bx-tada-hover'></i>
+        </button>
       </div>
+
+      <div id="searchToggle">
+        <button type="button" class="openFeat" onclick="openFeat()">
+          <i class='bx bx-search bx-md bx-tada-hover'></i>
+        </button>
+      </div>
+
+      <div id="timerToggle">
+        <button type="button" class="openFeat" onclick="openFeat()">
+          <i class='bx bx-time-five bx-md bx-tada-hover'></i>
+        </button>
+      </div>
+
     </div>
-    </div>
+  </div>
+  </div>
 
-    <div class="features">
-      <button type="button" class="closeFeat" onclick="closeFeat()">
-        <i class='bx bx-x bx-md '></i>
-      </button>
-      <div id="musicPlayer">
-        <p>musicPlayer</p>
-      </div>
-      <div id="pomodoro">
-        <p>pomodoro</p>
-      </div>
-      <div id="stopwatch">
-        <p>stopwatch</p>
-      </div>
-      <div id="dictionary">
-        <p>dictionary</p>
-      </div>
+  <div class="features">
+    <button type="button" class="closeFeat" onclick="closeFeat()">
+      <i class='bx bx-x bx-md '></i>
+    </button>
+    <div id="musicPlayer">
+      <p>musicPlayer</p>
     </div>
+    <div id="pomodoro">
+      <p>pomodoro</p>
+    </div>
+    <div id="stopwatch">
+      <p>stopwatch</p>
+    </div>
+    <div id="dictionary">
+      <p>dictionary</p>
+    </div>
+  </div>
 
 </body>
 

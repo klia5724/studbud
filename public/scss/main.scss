@@ -15,7 +15,7 @@ body {
 /* kanban board */
 main { 
   position: absolute;
-  width: 90%;
+  width: 95%;
   height: 87.5%;
   margin: 20px 20px;
   background-color: #323232;
@@ -86,4 +86,97 @@ main {
 
 .task .delete:hover {
   color: black;
+}
+
+/* add task popup */
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 25%;
+  left: 35%;
+  width: 30%; 
+  height: 58%; 
+  overflow: hidden; 
+  background-color: white;
+  border-radius: 10px;
+}
+
+.header {
+  padding: 30px 55px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.body {
+  margin-left: 13%;
+  width: 90%;
+}
+
+#taskTitle {
+  margin: 8px 0;
+  padding: 8px 5px;
+  width: 80%;
+  border: 0.5px solid #606060;
+  border-radius: 5px;
+}
+
+#taskDesc {
+  margin: 5px 0;
+  padding: 8px 5px;
+  width: 80%;
+  border: 0.5px solid #606060;
+  border-radius: 5px;
+}
+
+::placeholder {
+  font-style: italic;
+  color: #606060;
+}
+
+#taskPriority {
+  margin-top: 8px;
+  padding: 8px 5px;
+  border: 0.5px solid #606060;
+  border-radius: 5px;
+  width: 43%;
+}
+
+label {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+#taskDueDate {
+  padding: 5px;
+  border-radius: 5px;
+  border: 0.5px solid #606060;
+}
+
+#taskTime {
+  padding: 8px 5px;
+  width: 40%;
+  border: 0.5px solid #606060;
+  border-radius: 5px;
+}
+
+#taskSubmit {
+  margin-top: 15px;
+  padding: 8px 5px;
+  width: 83%;
+  color: white;
+  border: none;
+  background-color: #4185B4;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popupClose {
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
 }
